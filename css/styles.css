@@ -5,7 +5,7 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
-@import url("https://fonts.googleapis.com/css2?family=Kantumruy+Pro&display=swap");
+@import url("https://use.typekit.net/rxx0kri.css");
 html {
   line-height: 1.15;
   /* 1 */
@@ -310,20 +310,17 @@ html {
   -ms-text-size-adjust: 100%; }
 
 /* FONTS */
-@font-face {
-  font-family: "KhmerMN";
-  src: url(../fonts/khmer-mn.ttf); }
 /*----------- apply a natural box layout model to all elements --------------*/
 * {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  background-color: #000;
-  color: #ffffff;
-  font-family: "KhmerMN", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; }
+  color: #252525;
+  font-family: "adobe-kannada", 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; }
 
 /*----------- BODY --------------*/
 body {
+  background-color: #F5F0EC;
   overflow-x: hidden;
   font-size: 1rem;
   font-family: Verdana, sans-serif;
@@ -354,7 +351,6 @@ header {
   z-index: 1;
   left: 0;
   top: 0;
-  background-color: rgba(0, 0, 0, 0.95);
   overflow-x: hidden;
   transition: 0.5s; }
 
@@ -376,16 +372,11 @@ nav .menu {
   padding: .5em;
   text-decoration: none;
   font-size: 2.25rem;
-  color: #f1f1f1;
   display: block;
   transition: 0.3s;
   background-color: transparent; }
 
 /* When you mouse over the navigation links, change their color */
-.overlay a:hover,
-.overlay a:focus {
-  color: #818181; }
-
 /* Position the close button (top right corner) */
 .overlay #closeIcon {
   position: absolute;
@@ -396,12 +387,23 @@ nav .menu {
 .overlay.show-nav {
   width: 100%; }
 
-#myNav li.active a {
-  color: #929292; }
+#myNav {
+  background-color: #f5f0ecde; }
 
 /*----------- MAIN --------------*/
 main h1 {
   font-size: 3.75rem; }
+main .parentContainer {
+  position: relative;
+  text-align: center; }
+main .top-left {
+  position: absolute;
+  top: 1px;
+  left: 15px; }
+main .bottom-right {
+  position: absolute;
+  bottom: 10px;
+  right: 15px; }
 
 /*----------- FOOTER --------------*/
 footer {
@@ -464,15 +466,11 @@ footer {
       /* top right bottom left*/
       margin: 0 1.2em 0; }
       nav .menu li a {
-        color: #eee;
         text-decoration: none;
         font-size: 2.25rem;
         text-align: center;
         padding-bottom: 0;
         margin-bottom: 1em; }
-    nav .menu li a:hover {
-      background-color: #eee;
-      color: #333; }
 
   .overlay {
     position: relative;

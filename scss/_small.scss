@@ -2,22 +2,20 @@
 html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 
 /* FONTS */
-@font-face {
-    font-family: "KhmerMN";
-    src: url(../fonts/khmer-mn.ttf);
-}
-@import url('https://fonts.googleapis.com/css2?family=Kantumruy+Pro&display=swap');
+// https://fonts.adobe.com/fonts/adobe-kannada#about-section
+@import url("https://use.typekit.net/rxx0kri.css");
+
 /*----------- apply a natural box layout model to all elements --------------*/
 * {
     -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; 
-    background-color: #000;
-    color:#ffffff;
-    font-family: "KhmerMN", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color:#252525;
+    font-family: "adobe-kannada", 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 
 /*----------- BODY --------------*/
 body {
+    background-color: #F5F0EC;
     overflow-x: hidden;
     font-size: 1rem;
     font-family: Verdana, sans-serif;
@@ -54,7 +52,6 @@ header {
     z-index: 1;
     left: 0;
     top: 0;
-    background-color: rgba(0, 0, 0, 0.95);
     overflow-x: hidden;
     transition: 0.5s;
   }
@@ -79,7 +76,7 @@ header {
     padding: .5em;
     text-decoration: none;
     font-size: 2.25rem;
-    color: #f1f1f1;
+    //color: #f1f1f1;
     display: block;
     transition: 0.3s;
     background-color: transparent;
@@ -88,7 +85,7 @@ header {
   /* When you mouse over the navigation links, change their color */
   .overlay a:hover,
   .overlay a:focus {
-    color: #818181;
+    //color: #818181;
   }
   
   /* Position the close button (top right corner) */
@@ -104,7 +101,10 @@ header {
   }
 
   #myNav li.active a {
-    color: #929292;
+    //color: #929292;
+  }
+  #myNav{
+    background-color: #f5f0ecde;
   }
   
   
@@ -115,6 +115,20 @@ main {
 h1{
     font-size: 3.75rem;
 }
+.parentContainer {
+    position: relative;
+    text-align: center;
+    }
+.top-left {
+    position: absolute;
+    top: 1px;
+    left: 15px;
+    }
+    .bottom-right {
+        position: absolute;
+        bottom: 10px;
+        right: 15px;
+        }
 }
 
 
