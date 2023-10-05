@@ -332,15 +332,18 @@ body {
 header {
   display: flex;
   justify-content: space-between; }
-  header img {
-    height: 2.5em;
-    width: auto;
-    margin: 1em 0 0 1em; }
   header .menuText {
     font-size: 2.5rem;
     text-decoration: underline;
     text-underline-offset: .2em;
     margin: .5em .5em 0 0; }
+  header .daphBen {
+    /* top right bottom left*/
+    margin: 1rem 0 0 1rem; }
+    header .daphBen a {
+      text-decoration: none; }
+    header .daphBen h1 {
+      margin: 0; }
 
 /*----------- NAVIGATION --------------*/
 /* The Overlay (background) using https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp*/
@@ -396,11 +399,11 @@ main h1 {
 main .parentContainer {
   position: relative;
   text-align: center; }
-main .top-left {
+main .hisName {
   position: absolute;
-  top: 1px;
-  left: 15px; }
-main .bottom-right {
+  top: 0;
+  left: 0; }
+main .herName {
   position: absolute;
   bottom: 10px;
   right: 15px; }
