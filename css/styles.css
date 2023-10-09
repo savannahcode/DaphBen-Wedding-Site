@@ -307,7 +307,8 @@ template {
 /* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
 html {
   -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%; }
+  -ms-text-size-adjust: 100%;
+  width: 100%; }
 
 /* FONTS */
 /*----------- apply a natural box layout model to all elements --------------*/
@@ -343,7 +344,8 @@ header {
     header .daphBen a {
       text-decoration: none; }
     header .daphBen h1 {
-      margin: 0; }
+      margin: 0;
+      font-size: 2.5rem; }
 
 /*----------- NAVIGATION --------------*/
 /* The Overlay (background) using https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp*/
@@ -399,12 +401,12 @@ main h1 {
 main .parentContainer {
   position: relative;
   text-align: center;
-  width: 44.5rem;
+  height: 50rem;
+  width: auto;
   margin: auto; }
 main .dateContainer {
   position: relative;
-  height: 40rem;
-  max-width: 72rem;
+  height: 50rem;
   margin: auto; }
 main .hisName {
   position: absolute;
@@ -412,17 +414,37 @@ main .hisName {
   left: 0; }
 main .herName {
   position: absolute;
-  bottom: 2px;
-  right: 15px; }
-main .date {
+  bottom: 0;
+  right: 0; }
+main .dateText {
   position: absolute;
   bottom: -.5rem;
   right: 10px;
   margin: 0;
   font-size: 3rem; }
 main img {
+  margin-top: 5rem;
   height: 40rem;
   width: auto; }
+main .contentPage {
+  margin: auto;
+  text-align: center; }
+  main .contentPage h1 {
+    text-align: center; }
+  main .contentPage button {
+    border: #252525 solid .1rem;
+    border-radius: .5rem;
+    font-size: 2rem;
+    background-color: #F5F0EC;
+    text-transform: uppercase;
+    /* top right bottom left*/
+    padding: 1.5rem 1rem 1rem; }
+    main .contentPage button a {
+      text-decoration: none; }
+  main .contentPage .venmoQR {
+    border-radius: .5rem;
+    height: 17rem;
+    width: auto; }
 
 /*----------- FOOTER --------------*/
 footer {
@@ -442,6 +464,34 @@ footer {
   /*----------- HEADER --------------*/
   /*----------- NAVIGATION --------------*/
   /*----------- MAIN --------------*/
+  main .parentContainer {
+    position: relative;
+    text-align: center;
+    width: 44.5rem;
+    height: auto;
+    margin: auto; }
+  main .dateContainer {
+    position: relative;
+    height: 40rem;
+    max-width: 72rem;
+    margin: auto; }
+  main .hisName {
+    position: absolute;
+    top: 0;
+    left: 0; }
+  main .herName {
+    position: absolute;
+    bottom: 2px;
+    right: 15px; }
+  main .dateText {
+    position: absolute;
+    bottom: -.5rem;
+    right: 10px;
+    margin: 0;
+    font-size: 3rem; }
+  main img {
+    margin-top: 0; }
+
   /*----------- FOOTER --------------*/ }
 /* end of media query */
 @media only screen and (min-width: 64rem) {
@@ -498,6 +548,31 @@ footer {
     margin-top: .5em; }
 
   /*----------- MAIN --------------*/
+  main .parentContainer {
+    position: relative;
+    text-align: center;
+    width: 44.5rem;
+    margin: auto; }
+  main .dateContainer {
+    position: relative;
+    height: 40rem;
+    max-width: 72rem;
+    margin: auto; }
+  main .hisName {
+    position: absolute;
+    top: 0;
+    left: 0; }
+  main .herName {
+    position: absolute;
+    bottom: 2px;
+    right: 15px; }
+  main .dateText {
+    position: absolute;
+    bottom: -.5rem;
+    right: 10px;
+    margin: 0;
+    font-size: 3rem; }
+
   /*----------- FOOTER --------------*/
   footer {
     margin-top: 1.7em; } }

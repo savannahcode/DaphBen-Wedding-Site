@@ -1,5 +1,5 @@
 /* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
-html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; width:100%;}
 
 /* FONTS */
 // https://fonts.adobe.com/fonts/adobe-kannada#about-section
@@ -46,6 +46,7 @@ header {
         
         h1{
             margin: 0;
+            font-size: 2.5rem;
         }
     }
 }
@@ -127,13 +128,13 @@ h1{
 .parentContainer {
     position: relative;
     text-align: center;
-    width: 44.5rem;
+    height: 50rem;
+    width: auto;
     margin: auto;
     }
     .dateContainer{
       position: relative;
-      height: 40rem;
-      max-width: 72rem;
+      height: 50rem;
       margin:auto;
     }
 .hisName {
@@ -143,10 +144,10 @@ h1{
     }
     .herName {
         position: absolute;
-        bottom: 2px;
-        right: 15px;
+        bottom: 0;
+        right: 0;
         }
-    .date{
+    .dateText{
       position: absolute;
         bottom: -.5rem;
         right: 10px;
@@ -154,9 +155,35 @@ h1{
         font-size: 3rem;
     }
         img{
+          margin-top: 5rem;
           height: 40rem;
           width: auto;
         }
+
+  .contentPage{
+    h1{
+      text-align: center;
+    }
+    margin: auto;
+    text-align: center;
+    button{
+      border: #252525 solid .1rem;
+      border-radius: .5rem;
+      font-size: 2rem;
+      background-color: #F5F0EC;
+      text-transform: uppercase;
+      /* top right bottom left*/
+      padding: 1.5rem 1rem 1rem;
+      a{
+        text-decoration: none;
+      }
+    }
+    .venmoQR{
+      border-radius: .5rem;
+      height: 17rem;
+      width: auto;
+    }
+  }
 }
 
 

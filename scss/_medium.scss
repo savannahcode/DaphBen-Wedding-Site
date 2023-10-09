@@ -15,7 +15,39 @@
 
 /*----------- MAIN --------------*/
 main{
-    
+    .parentContainer {
+        position: relative;
+        text-align: center;
+        width: 44.5rem;
+        height: auto;
+        margin: auto;
+        }
+        .dateContainer{
+          position: relative;
+          height: 40rem;
+          max-width: 72rem;
+          margin:auto;
+        }
+    .hisName {
+        position: absolute;
+        top: 0;
+        left: 0;
+        }
+        .herName {
+            position: absolute;
+            bottom: 2px;
+            right: 15px;
+            }
+        .dateText{
+          position: absolute;
+            bottom: -.5rem;
+            right: 10px;
+            margin: 0;
+            font-size: 3rem;
+        } 
+        img{
+            margin-top: 0;
+        }
 }
 
 
