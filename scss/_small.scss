@@ -127,6 +127,14 @@ h1{
 .parentContainer {
     position: relative;
     text-align: center;
+    width: 44.5rem;
+    margin: auto;
+    }
+    .dateContainer{
+      position: relative;
+      height: 40rem;
+      max-width: 72rem;
+      margin:auto;
     }
 .hisName {
     position: absolute;
@@ -135,8 +143,19 @@ h1{
     }
     .herName {
         position: absolute;
-        bottom: 10px;
+        bottom: 2px;
         right: 15px;
+        }
+    .date{
+      position: absolute;
+        bottom: -.5rem;
+        right: 10px;
+        margin: 0;
+        font-size: 3rem;
+    }
+        img{
+          height: 40rem;
+          width: auto;
         }
 }
 

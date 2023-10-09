@@ -398,15 +398,31 @@ main h1 {
   font-size: 3.75rem; }
 main .parentContainer {
   position: relative;
-  text-align: center; }
+  text-align: center;
+  width: 44.5rem;
+  margin: auto; }
+main .dateContainer {
+  position: relative;
+  height: 40rem;
+  max-width: 72rem;
+  margin: auto; }
 main .hisName {
   position: absolute;
   top: 0;
   left: 0; }
 main .herName {
   position: absolute;
-  bottom: 10px;
+  bottom: 2px;
   right: 15px; }
+main .date {
+  position: absolute;
+  bottom: -.5rem;
+  right: 10px;
+  margin: 0;
+  font-size: 3rem; }
+main img {
+  height: 40rem;
+  width: auto; }
 
 /*----------- FOOTER --------------*/
 footer {
