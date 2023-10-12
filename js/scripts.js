@@ -17,31 +17,36 @@ function checkScreenWidth() {
   }
 }
 
+document.addEventListener("DOMContentLoaded", function () {
+  // Get the cover element
+  var coverElement = document.querySelector(".cover")
+
+  // Function to change z-index after the fade-in animation
+  function changeZIndex() {
+    coverElement.style.zIndex = -1 // Set the desired z-index value
+  }
+
+  // Add a timeout to apply the "fade-in" class after a delay
+  setTimeout(function () {
+    coverElement.classList.add("fade-in")
+
+    // Add the transitionend event listener to trigger the z-index change
+    coverElement.addEventListener("transitionend", changeZIndex)
+  }, 500) // Adjust the delay as needed
+})
+/*
+
 // Event listener for resize
 window.addEventListener("resize", checkScreenWidth)
 
 // Call the checkScreenWidth function on page load
 checkScreenWidth()
 
-/* SCROLL UP to top button code */
-// Get the button:
-let mybutton = document.getElementById("myBtn")
+document.addEventListener("DOMContentLoaded", function () {
+  // Get the cover element
+  var coverElement = document.querySelector(".cover")
 
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function () {
-  scrollFunction()
-}
-
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.style.display = "block"
-  } else {
-    mybutton.style.display = "none"
-  }
-}
-
-// When the user clicks on the button, scroll to the top of the document
-function topFunction() {
-  document.body.scrollTop = 0 // For Safari
-  document.documentElement.scrollTop = 0 // For Chrome, Firefox, IE and Opera
-}
+  // Add the "fade-in" class to trigger the animation
+  coverElement.classList.add("fade-in")
+})
+*/

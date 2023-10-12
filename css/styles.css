@@ -319,6 +319,23 @@ html {
   color: #252525;
   font-family: "adobe-kannada", 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; }
 
+.cover {
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #F5F0EC;
+  /* Set your desired background color */
+  opacity: 1;
+  transition: opacity 1s ease-in; }
+
+.fade-in {
+  opacity: 0;
+  /* Fading in state */
+  transition: opacity 1s ease-in; }
+
 /*----------- BODY --------------*/
 body {
   background-color: #F5F0EC;
