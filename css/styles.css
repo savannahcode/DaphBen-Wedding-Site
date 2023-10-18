@@ -399,6 +399,15 @@ nav .menu {
   background-color: transparent; }
 
 /* When you mouse over the navigation links, change their color */
+.overlay a:hover,
+.overlay a:focus {
+  color: #818181;
+  text-decoration: underline;
+  text-underline-position: under; }
+
+.overlay #closeIcon:hover {
+  text-decoration: none; }
+
 /* Position the close button (top right corner) */
 .overlay #closeIcon {
   position: absolute;
@@ -416,7 +425,8 @@ nav .menu {
 main {
   /*
 Scroll to top button from: https://www.w3schools.com/howto/howto_js_scroll_to_top.asp
-*/ }
+*/
+  /* End of SCROLL Btn CSS*/ }
   main h1 {
     font-size: 3.75rem; }
   main .dateContainer {
@@ -524,6 +534,25 @@ Scroll to top button from: https://www.w3schools.com/howto/howto_js_scroll_to_to
       max-width: 33rem;
       margin: auto;
       text-align: left; }
+    main .contentPage .itinerary {
+      text-align: left;
+      max-width: 30rem;
+      margin: auto;
+      margin-top: 2rem;
+      padding: .6rem 2rem; }
+      main .contentPage .itinerary h2 {
+        margin: 0 0 .7rem 0;
+        font-size: 2.5rem; }
+      main .contentPage .itinerary h3 {
+        margin: 0 0 0 .3rem;
+        font-size: 1.7rem; }
+      main .contentPage .itinerary h4 {
+        margin: 0 0 1.3rem 1rem;
+        font-size: 1.5rem; }
+      main .contentPage .itinerary a {
+        text-decoration: overline underline;
+        text-decoration-thickness: .05rem;
+        text-underline-position: under; }
   main #myBtn {
     display: none;
     position: fixed;
@@ -624,6 +653,8 @@ footer {
           margin: 0 0 0 1.5rem;
           font-size: 1.3rem;
           max-width: 25rem; }
+  main .contentPage .itinerary {
+    max-width: 38rem; }
 
   /*----------- FOOTER --------------*/ }
 /* end of media query */

@@ -15,11 +15,14 @@ function closeNav() {
   document.getElementById("myNav").style.width = "0%"
 }
 
+window.addEventListener("resize", checkScreenWidth)
 // Function to check screen width and open navigation if needed
 function checkScreenWidth() {
   if (window.innerWidth >= 64 * 16) {
     // 64rem * 16px (1rem = 16px)
     openNav()
+  } else {
+    closeNav()
   }
 }
 
@@ -56,7 +59,6 @@ function handleEngagementClick() {
 }
 
 function handleBridalsClick() {
-  console.log("bride")
   photosDisplay.innerHTML = ""
   let message = document.createElement("h2")
   message.textContent =
@@ -65,7 +67,6 @@ function handleBridalsClick() {
 }
 
 function handleWeddingClick() {
-  console.log("wedding")
   photosDisplay.innerHTML = ""
   let message = document.createElement("h2")
   message.textContent =
@@ -74,12 +75,10 @@ function handleWeddingClick() {
 }
 
 function handleAllPhotosClick() {
-  console.log("allphotos")
   photosDisplay.innerHTML = ""
   let message = document.createElement("h2")
   message.textContent =
     "Sorry! We only have the Engagement pictures so far, but here they all are!"
-  console.log(message)
   handleEngagementClick()
   photosDisplay.appendChild(message)
 }
@@ -106,3 +105,5 @@ function topFunction() {
   document.body.scrollTop = 0 // For Safari
   document.documentElement.scrollTop = 0 // For Chrome, Firefox, IE and Opera
 }
+
+// END of SCROLL UP Btn Functions

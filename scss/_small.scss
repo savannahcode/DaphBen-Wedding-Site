@@ -111,7 +111,13 @@ header {
   /* When you mouse over the navigation links, change their color */
   .overlay a:hover,
   .overlay a:focus {
-    //color: #818181;
+    color: #818181;
+    text-decoration: underline;
+    text-underline-position: under;
+  }
+
+  .overlay #closeIcon:hover{
+    text-decoration: none;
   }
   
   /* Position the close button (top right corner) */
@@ -275,6 +281,31 @@ h1{
         text-align: left;
       }
     }
+
+    .itinerary{
+      text-align: left;
+      max-width: 30rem;
+      margin: auto;
+      margin-top: 2rem;
+      padding: .6rem 2rem;
+      h2{
+        margin: 0 0 .7rem 0;
+        font-size: 2.5rem;
+      }
+      h3{
+        margin: 0 0 0 .3rem;
+        font-size: 1.7rem;
+      }
+      h4{
+        margin: 0 0 1.3rem 1rem;
+        font-size: 1.5rem;
+      }
+      a{
+        text-decoration: overline underline;
+        text-decoration-thickness: .05rem;
+        text-underline-position: under;
+      }
+    }
     // end of .contentPage
   }
   /*
@@ -300,6 +331,7 @@ Scroll to top button from: https://www.w3schools.com/howto/howto_js_scroll_to_to
 #myBtn:hover {
   background-color: rgba(60, 60, 60, 0.8);
 }
+/* End of SCROLL Btn CSS*/
 }
 
 
