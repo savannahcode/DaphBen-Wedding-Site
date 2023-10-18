@@ -32,21 +32,5 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Add the transitionend event listener to trigger the z-index change
     coverElement.addEventListener("transitionend", changeZIndex)
-  }, 500) // Adjust the delay as needed
+  }, 50) // Adjust the delay as needed
 })
-/*
-
-// Event listener for resize
-window.addEventListener("resize", checkScreenWidth)
-
-// Call the checkScreenWidth function on page load
-checkScreenWidth()
-
-document.addEventListener("DOMContentLoaded", function () {
-  // Get the cover element
-  var coverElement = document.querySelector(".cover")
-
-  // Add the "fade-in" class to trigger the animation
-  coverElement.classList.add("fade-in")
-})
-*/

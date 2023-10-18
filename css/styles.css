@@ -329,12 +329,12 @@ html {
   background-color: #F5F0EC;
   /* Set your desired background color */
   opacity: 1;
-  transition: opacity 1s ease-in; }
+  transition: opacity .6s ease-in; }
 
 .fade-in {
   opacity: 0;
   /* Fading in state */
-  transition: opacity 1s ease-in; }
+  transition: opacity .6s ease-in; }
 
 /*----------- BODY --------------*/
 body {
@@ -415,33 +415,34 @@ nav .menu {
 /*----------- MAIN --------------*/
 main h1 {
   font-size: 3.75rem; }
+main .dateContainer {
+  position: relative;
+  height: 50rem;
+  margin: auto; }
 main .parentContainer {
   position: relative;
   text-align: center;
   height: 50rem;
   width: auto;
   margin: auto; }
-main .dateContainer {
-  position: relative;
-  height: 50rem;
-  margin: auto; }
-main .hisName {
-  position: absolute;
-  top: 0;
-  left: 0; }
-main .herName {
-  position: absolute;
-  bottom: 0;
-  right: 0; }
+  main .parentContainer .hisName {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 1.7rem; }
+  main .parentContainer .herName {
+    position: absolute;
+    bottom: 1.5em;
+    right: 0; }
 main .dateText {
   position: absolute;
-  bottom: -.5rem;
+  bottom: 2rem;
   right: 10px;
-  margin: 0;
+  padding: 0;
   font-size: 3rem; }
 main img {
-  margin-top: 5rem;
-  height: 40rem;
+  margin-top: 3.8rem;
+  height: 35rem;
   width: auto; }
 main .contentPage {
   margin: auto;
@@ -481,33 +482,36 @@ footer {
   /*----------- HEADER --------------*/
   /*----------- NAVIGATION --------------*/
   /*----------- MAIN --------------*/
+  main .dateContainer {
+    position: relative;
+    height: 40rem;
+    max-width: 72rem;
+    margin: auto; }
   main .parentContainer {
     position: relative;
     text-align: center;
     width: 44.5rem;
     height: auto;
     margin: auto; }
-  main .dateContainer {
-    position: relative;
-    height: 40rem;
-    max-width: 72rem;
-    margin: auto; }
-  main .hisName {
-    position: absolute;
-    top: 0;
-    left: 0; }
-  main .herName {
-    position: absolute;
-    bottom: 2px;
-    right: 15px; }
+    main .parentContainer .hisName {
+      position: absolute;
+      top: 1.3rem;
+      left: 6rem;
+      margin-top: 1.7rem; }
+    main .parentContainer .herName {
+      position: absolute;
+      bottom: -5.3rem;
+      right: 27rem; }
   main .dateText {
     position: absolute;
-    bottom: -.5rem;
-    right: 10px;
+    bottom: -9.7rem;
+    right: 9.6rem;
     margin: 0;
     font-size: 3rem; }
   main img {
-    margin-top: 0; }
+    margin-top: 5rem;
+    height: 38rem;
+    width: auto; }
 
   /*----------- FOOTER --------------*/ }
 /* end of media query */
@@ -565,30 +569,34 @@ footer {
     margin-top: .5em; }
 
   /*----------- MAIN --------------*/
-  main .parentContainer {
-    position: relative;
-    text-align: center;
-    width: 44.5rem;
-    margin: auto; }
   main .dateContainer {
     position: relative;
     height: 40rem;
     max-width: 72rem;
     margin: auto; }
-  main .hisName {
-    position: absolute;
-    top: 0;
-    left: 0; }
-  main .herName {
-    position: absolute;
-    bottom: 2px;
-    right: 15px; }
+  main .parentContainer {
+    position: relative;
+    text-align: center;
+    width: 44.5rem;
+    margin: auto; }
+    main .parentContainer .hisName {
+      position: absolute;
+      top: 0;
+      left: -.5rem; }
+    main .parentContainer .herName {
+      position: absolute;
+      bottom: 2rem;
+      right: .2rem; }
   main .dateText {
     position: absolute;
-    bottom: -.5rem;
-    right: 10px;
+    bottom: -1.5rem;
+    right: 4rem;
     margin: 0;
     font-size: 3rem; }
+  main img {
+    margin-top: 0;
+    height: 41rem;
+    width: auto; }
 
   /*----------- FOOTER --------------*/
   footer {

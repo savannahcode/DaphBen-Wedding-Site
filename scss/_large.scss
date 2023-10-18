@@ -61,6 +61,7 @@ nav {
       }
       
     }
+
   }
   .overlay{
     position: relative;
@@ -71,34 +72,41 @@ nav {
 
 /*----------- MAIN --------------*/
 main{
+  .dateContainer{
+    position: relative;
+    height: 40rem;
+    max-width: 72rem;
+    margin:auto;
+  }
   .parentContainer {
     position: relative;
     text-align: center;
     width: 44.5rem;
     margin: auto;
-    }
-    .dateContainer{
-      position: relative;
-      height: 40rem;
-      max-width: 72rem;
-      margin:auto;
-    }
+    
+    
 .hisName {
     position: absolute;
     top: 0;
-    left: 0;
+    left: -.5rem;
     }
     .herName {
         position: absolute;
-        bottom: 2px;
-        right: 15px;
+        bottom: 2rem;
+        right: .2rem;
         }
+      }
     .dateText{
       position: absolute;
-        bottom: -.5rem;
-        right: 10px;
+        bottom: -1.5rem;
+        right: 4rem;
         margin: 0;
         font-size: 3rem;
+    }
+    img{
+      margin-top: 0;
+      height: 41rem;
+      width: auto;
     }
 }
 
