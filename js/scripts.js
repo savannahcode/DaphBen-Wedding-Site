@@ -1,5 +1,8 @@
 /* NAV open and close */
 /* Open */
+let engagementBtn = document.querySelector(".engagements")
+let photosDisplay = document.querySelector(".photosDisplay")
+
 function openNav() {
   document.getElementById("myNav").style.width = "100%"
 }
@@ -34,3 +37,9 @@ document.addEventListener("DOMContentLoaded", function () {
     coverElement.addEventListener("transitionend", changeZIndex)
   }, 50) // Adjust the delay as needed
 })
+
+engagementBtn.addEventListener("click", handleClick)
+
+function handleClick() {
+  photosDisplay
+}
