@@ -1,6 +1,9 @@
 /* NAV open and close */
 /* Open */
 let engagementBtn = document.querySelector(".engagements")
+let bridalsBtn = document.querySelector(".bridals")
+let weddingBtn = document.querySelector(".wedding")
+let allPhotosBtn = document.querySelector(".all")
 let photosDisplay = document.querySelector(".photosDisplay")
 
 function openNav() {
@@ -38,8 +41,68 @@ document.addEventListener("DOMContentLoaded", function () {
   }, 50) // Adjust the delay as needed
 })
 
-engagementBtn.addEventListener("click", handleClick)
+engagementBtn.addEventListener("click", handleEngagementClick)
+bridalsBtn.addEventListener("click", handleBridalsClick)
+weddingBtn.addEventListener("click", handleWeddingClick)
+allPhotosBtn.addEventListener("click", handleAllPhotosClick)
 
-function handleClick() {
-  photosDisplay
+function handleEngagementClick() {
+  photosDisplay.innerHTML = ""
+  for (let index = 1; index <= 166; index++) {
+    let newImg = document.createElement("img")
+    newImg.src = `images/daphne-ben-engagements/engagements${index}.jpg`
+    photosDisplay.appendChild(newImg)
+  }
+}
+
+function handleBridalsClick() {
+  console.log("bride")
+  photosDisplay.innerHTML = ""
+  let message = document.createElement("h2")
+  message.textContent =
+    "Sorry! We don't have the Bridal pictures available yet. Please check back later."
+  photosDisplay.appendChild(message)
+}
+
+function handleWeddingClick() {
+  console.log("wedding")
+  photosDisplay.innerHTML = ""
+  let message = document.createElement("h2")
+  message.textContent =
+    "Sorry! We don't have the Wedding pictures available yet, especially since the wedding doesn't take place till 11/17/2023. Please check back later."
+  photosDisplay.appendChild(message)
+}
+
+function handleAllPhotosClick() {
+  console.log("allphotos")
+  photosDisplay.innerHTML = ""
+  let message = document.createElement("h2")
+  message.textContent =
+    "Sorry! We only have the Engagement pictures so far, but here they all are!"
+  console.log(message)
+  handleEngagementClick()
+  photosDisplay.appendChild(message)
+}
+
+/* SCROLL UP to top button code */
+// Get the button:
+let mybutton = document.getElementById("myBtn")
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function () {
+  scrollFunction()
+}
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block"
+  } else {
+    mybutton.style.display = "none"
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0 // For Safari
+  document.documentElement.scrollTop = 0 // For Chrome, Firefox, IE and Opera
 }
