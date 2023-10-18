@@ -448,21 +448,71 @@ main .contentPage {
   margin: auto;
   text-align: center; }
   main .contentPage h1 {
-    text-align: center; }
+    text-align: center;
+    margin-bottom: .5rem; }
   main .contentPage button {
     border: #252525 solid .1rem;
     border-radius: .5rem;
     font-size: 2rem;
     background-color: #F5F0EC;
     text-transform: uppercase;
-    /* top right bottom left*/
-    padding: 1.5rem 1rem 1rem; }
+    /* top | left and right | bottom */
+    padding: 1.5rem .5rem 1rem;
+    margin: .4rem; }
     main .contentPage button a {
       text-decoration: none; }
   main .contentPage .venmoQR {
     border-radius: .5rem;
-    height: 17rem;
-    width: auto; }
+    height: 14rem;
+    width: auto;
+    margin: 1.3rem 0; }
+  main .contentPage .photoButtons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0 2rem;
+    max-width: 40rem;
+    margin: auto; }
+    main .contentPage .photoButtons button {
+      min-width: 23rem;
+      font-size: 1.5rem; }
+  main .contentPage .registryInfo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: auto;
+    max-width: 25rem; }
+    main .contentPage .registryInfo div {
+      margin: .5rem 2rem; }
+    main .contentPage .registryInfo button {
+      min-width: 19.5rem; }
+  main .contentPage .allDates {
+    margin-bottom: 2rem;
+    max-width: 25rem; }
+  main .contentPage .date {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    width: fit-content; }
+    main .contentPage .date i {
+      color: #252525;
+      margin: .5rem; }
+    main .contentPage .date img {
+      height: 3rem;
+      width: auto;
+      margin: .5rem; }
+    main .contentPage .date .dateInfo {
+      text-align: left;
+      margin: 0rem 1rem 1rem;
+      max-width: 16rem; }
+      main .contentPage .date .dateInfo h2 {
+        margin: 1rem 1rem 0;
+        font-size: 1.8rem; }
+      main .contentPage .date .dateInfo p {
+        /* top right bottom left*/
+        margin: 0 0 0 1.5rem;
+        font-size: 1.3rem;
+        max-width: 20rem; }
 
 /*----------- FOOTER --------------*/
 footer {
@@ -512,6 +562,40 @@ footer {
     margin-top: 5rem;
     height: 38rem;
     width: auto; }
+  main .photoButtons button {
+    min-width: 29rem;
+    font-size: 2.6rem; }
+  main .date .dateInfo p p {
+    max-width: 30rem; }
+  main .allDates {
+    margin: auto;
+    margin-bottom: 2rem;
+    min-width: 36rem; }
+    main .allDates .date {
+      min-width: 35rem;
+      display: flex;
+      flex-wrap: wrap;
+      margin: auto;
+      width: fit-content; }
+      main .allDates .date i {
+        color: #252525;
+        margin: .5rem; }
+      main .allDates .date img {
+        height: 5rem;
+        width: auto;
+        margin: .5rem; }
+      main .allDates .date .dateInfo {
+        text-align: left;
+        margin: 0 1rem;
+        min-width: 27rem; }
+        main .allDates .date .dateInfo h2 {
+          margin: 1rem 1rem 0;
+          font-size: 2.3rem; }
+        main .allDates .date .dateInfo p {
+          /* top right bottom left*/
+          margin: 0 0 0 1.5rem;
+          font-size: 1.3rem;
+          max-width: 25rem; }
 
   /*----------- FOOTER --------------*/ }
 /* end of media query */
@@ -597,6 +681,8 @@ footer {
     margin-top: 0;
     height: 41rem;
     width: auto; }
+  main .contentPage .registryInfo {
+    max-width: 55rem; }
 
   /*----------- FOOTER --------------*/
   footer {
