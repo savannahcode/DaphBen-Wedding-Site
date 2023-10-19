@@ -274,6 +274,8 @@ h1{
       img{
         margin: .5rem;
         border-radius: 3%;
+        width: 96%;
+        height: auto;
       }
       h2{
         max-width: 33rem;
@@ -303,7 +305,8 @@ h1{
       a{
         text-decoration: overline underline;
         text-decoration-thickness: .05rem;
-        text-underline-position: under;
+        line-height: 2.3rem;
+        text-underline-offset: .5rem;
       }
     }
     // end of .contentPage

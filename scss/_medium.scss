@@ -98,9 +98,16 @@ main{
             }
         }
           }
-          .contentPage .itinerary{
+          .contentPage{
+
+           .itinerary{
             max-width: 38rem;
+            a{
+            text-underline-position: under;
+            line-height: normal;
           }
+           }
+        }
 }
 
 

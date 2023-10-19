@@ -529,7 +529,9 @@ Scroll to top button from: https://www.w3schools.com/howto/howto_js_scroll_to_to
           max-width: 20rem; }
     main .contentPage .photosDisplay img {
       margin: .5rem;
-      border-radius: 3%; }
+      border-radius: 3%;
+      width: 96%;
+      height: auto; }
     main .contentPage .photosDisplay h2 {
       max-width: 33rem;
       margin: auto;
@@ -552,7 +554,8 @@ Scroll to top button from: https://www.w3schools.com/howto/howto_js_scroll_to_to
       main .contentPage .itinerary a {
         text-decoration: overline underline;
         text-decoration-thickness: .05rem;
-        text-underline-position: under; }
+        line-height: 2.3rem;
+        text-underline-offset: .5rem; }
   main #myBtn {
     display: none;
     position: fixed;
@@ -655,6 +658,9 @@ footer {
           max-width: 25rem; }
   main .contentPage .itinerary {
     max-width: 38rem; }
+    main .contentPage .itinerary a {
+      text-underline-position: under;
+      line-height: normal; }
 
   /*----------- FOOTER --------------*/ }
 /* end of media query */
@@ -742,6 +748,9 @@ footer {
     width: auto; }
   main .contentPage .registryInfo {
     max-width: 55rem; }
+  main .contentPage .photosDisplay img {
+    width: auto;
+    height: 41rem; }
 
   /*----------- FOOTER --------------*/
   footer {
