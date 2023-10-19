@@ -446,18 +446,18 @@ Scroll to top button from: https://www.w3schools.com/howto/howto_js_scroll_to_to
       margin-top: 1.7rem; }
     main .parentContainer .herName {
       position: absolute;
-      bottom: 1.5em;
+      bottom: 12rem;
       right: 0; }
   main .dateText {
     position: absolute;
-    bottom: 2rem;
+    bottom: 8rem;
     right: 10px;
     padding: 0;
     font-size: 3rem; }
   main img {
     margin-top: 3.8rem;
-    height: 35rem;
-    width: auto; }
+    height: auto;
+    width: 100%; }
   main .contentPage {
     margin: auto;
     text-align: center; }
