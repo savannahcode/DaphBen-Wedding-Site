@@ -538,7 +538,8 @@ Scroll to top button from: https://www.w3schools.com/howto/howto_js_scroll_to_to
       max-width: 33rem;
       margin: auto;
       text-align: left;
-      padding: .8rem; }
+      padding: .8rem;
+      margin-bottom: 2rem; }
     main .contentPage .itinerary {
       text-align: left;
       max-width: 30rem;
@@ -555,10 +556,9 @@ Scroll to top button from: https://www.w3schools.com/howto/howto_js_scroll_to_to
         margin: 0 0 1.3rem 1rem;
         font-size: 1.5rem; }
       main .contentPage .itinerary a {
-        text-decoration: overline underline;
         text-decoration-thickness: .05rem;
-        line-height: 2.3rem;
-        text-underline-offset: .5rem; }
+        line-height: 2.5rem;
+        text-underline-offset: .3rem; }
   main #myBtn {
     display: none;
     position: fixed;

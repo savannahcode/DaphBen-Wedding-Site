@@ -284,7 +284,7 @@ h1{
         max-width: 33rem;
         margin: auto;
         text-align: left;
-        padding: .8rem;
+        padding: .8rem; margin-bottom: 2rem;
       }
     }
 
@@ -307,10 +307,9 @@ h1{
         font-size: 1.5rem;
       }
       a{
-        text-decoration: overline underline;
         text-decoration-thickness: .05rem;
-        line-height: 2.3rem;
-        text-underline-offset: .5rem;
+        line-height: 2.5rem;
+        text-underline-offset: .3rem;
       }
     }
     // end of .contentPage
