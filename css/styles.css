@@ -464,6 +464,8 @@ Scroll to top button from: https://www.w3schools.com/howto/howto_js_scroll_to_to
     main .contentPage h1 {
       text-align: center;
       margin-bottom: .5rem; }
+    main .contentPage #selectPhotos {
+      margin: .5rem; }
     main .contentPage button {
       border: #252525 solid .1rem;
       border-radius: .5rem;
@@ -535,7 +537,8 @@ Scroll to top button from: https://www.w3schools.com/howto/howto_js_scroll_to_to
     main .contentPage .photosDisplay h2 {
       max-width: 33rem;
       margin: auto;
-      text-align: left; }
+      text-align: left;
+      padding: .8rem; }
     main .contentPage .itinerary {
       text-align: left;
       max-width: 30rem;
